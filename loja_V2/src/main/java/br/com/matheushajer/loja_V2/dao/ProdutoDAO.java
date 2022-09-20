@@ -1,11 +1,11 @@
-package br.com.matheushajer.loja.dao;
+package br.com.matheushajer.loja_V2.dao;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import br.com.matheushajer.loja.modelo.Produto;
+import br.com.matheushajer.loja_V2.modelo.Produto;
 
 public class ProdutoDAO {
 

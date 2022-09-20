@@ -1,10 +1,12 @@
-package br.com.matheushajer.loja.modelo;
+package br.com.matheushajer.loja_V2.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,9 +23,10 @@ public class Pedido {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private LocalDate data = LocalDate.now();
+	@Column(name = "valor_total")
 	private BigDecimal valorTotal;
 
-	@OneToMany(mappedBy = "pedido")
+	@OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
 	private List<ItemPedido> itens = new ArrayList<>();
 	
 	@ManyToOne

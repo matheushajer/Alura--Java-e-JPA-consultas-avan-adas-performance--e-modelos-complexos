@@ -1,15 +1,15 @@
-package br.com.matheushajer.loja.testes;
+package br.com.matheushajer.loja_V2.testes;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import br.com.matheushajer.loja.dao.CategoriaDAO;
-import br.com.matheushajer.loja.dao.ProdutoDAO;
-import br.com.matheushajer.loja.modelo.Categoria;
-import br.com.matheushajer.loja.modelo.Produto;
-import br.com.matheushajer.loja.util.JPAUtil;
+import br.com.matheushajer.loja_V2.dao.CategoriaDAO;
+import br.com.matheushajer.loja_V2.dao.ProdutoDAO;
+import br.com.matheushajer.loja_V2.modelo.Categoria;
+import br.com.matheushajer.loja_V2.modelo.Produto;
+import br.com.matheushajer.loja_V2.util.JPAUtil;
 
 public class CadastroDeProduto {
 

@@ -1,8 +1,8 @@
-package br.com.matheushajer.loja.dao;
+package br.com.matheushajer.loja_V2.dao;
 
 import javax.persistence.EntityManager;
 
-import br.com.matheushajer.loja.modelo.Categoria;
+import br.com.matheushajer.loja_V2.modelo.Categoria;
 
 public class CategoriaDAO {
 

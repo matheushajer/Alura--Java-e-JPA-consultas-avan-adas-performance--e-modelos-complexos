@@ -1,4 +1,4 @@
-package br.com.matheushajer.loja.modelo;
+package br.com.matheushajer.loja_V2.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
