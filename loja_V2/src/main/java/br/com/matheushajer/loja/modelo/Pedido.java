@@ -2,12 +2,14 @@ package br.com.matheushajer.loja.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +22,9 @@ public class Pedido {
 	private LocalDate data = LocalDate.now();
 	private BigDecimal valorTotal;
 
+	@OneToMany
+	private List<ItemPedido> itens;
+	
 	@ManyToOne
 	private Cliente cliente;
 
